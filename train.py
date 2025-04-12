@@ -1,6 +1,7 @@
 from data_loader import *
 from model import *
 import matplotlib.pyplot as plt
+from utils import *
 
 def loss(y_pred,y_true,params,lamda):
     """
@@ -25,19 +26,6 @@ def sgd(params, grads, lr):
         params[param_name] -= lr * grads[param_name]
 
     return params
-
-
-def accuracy(y_pred, y_true):
-    """ 计算分类准确率 """
-    # 将预测概率转换为类别索引
-    pred_labels = np.argmax(y_pred, axis=1)
-    # 将one-hot标签转换为类别索引
-    true_labels = np.argmax(y_true, axis=1)
-    # 计算正确预测的数量
-    correct = np.sum(pred_labels == true_labels)
-    # 计算准确率
-    return correct / y_true.shape[0]
-
 
 def train(model, X_train, X_val, y_train, y_val,
           lr=0.01, batch_size=128, epochs=100,
@@ -115,8 +103,6 @@ def train(model, X_train, X_val, y_train, y_val,
 
 
     return model, history
-
-
 
 def visualization(history):
     """
