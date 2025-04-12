@@ -15,8 +15,9 @@
 
 
 ## 模型训练
-
-`python train.py`
+```
+python train.py
+```
 
 
 
@@ -30,8 +31,9 @@
 
 百度网盘链接: https://pan.baidu.com/s/15d7HrnC_sVJ3wYPl0OcA0g 提取码: 12fh 
 
-
-`python test.py`
+```
+python test.py
+```
 
 
 
