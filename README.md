@@ -1,6 +1,6 @@
 # numpy-mlp-cifar10
 
-用numpy从零开始构建三层神经网络分类器，实现图像分类
+用**Numpy**从零开始构建三层神经网络分类器，实现图像分类
 
 ## 项目构成
 `model.py` ：模型代码，支持反向传播，自定义隐藏层个数，可选择激活函数；
@@ -18,10 +18,18 @@
 
 `python train.py`
 
+
+
+**训练过程可视化**
+
+![loss_acc_dual_axis](https://github.com/user-attachments/assets/4c119055-331e-4057-816f-00b763a3eaf2)
+
+
 ## 测试：
 模型权重下载：
 
 百度网盘链接: https://pan.baidu.com/s/15d7HrnC_sVJ3wYPl0OcA0g 提取码: 12fh 
+
 
 `python test.py`
 
